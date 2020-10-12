@@ -1,0 +1,19 @@
+{
+    "name": "adapt-walkgrove-embed-media",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/walkgrovedev/adapt-walkgrove-embed-media.git"
+    },
+    "framework": "5",
+    "version": "1.0.0",
+    "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-embed-media.git",
+    "component": "embed-media",
+    "displayName": "Embed Media",
+    "description": "A component ...",
+    "main": "/js/adapt-walkgrove-embed-media.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPL-3.0"
+}
