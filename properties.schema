@@ -29,6 +29,42 @@
       "validators": [],
       "help": "This is the instruction text",
       "translatable": true
+    },
+    "_video": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "src": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "title": "Video embed URL",
+          "inputType": "Text",
+          "validators": [],
+          "help": "",
+          "translatable": false
+        },
+        "_width": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "title": "Video width",
+          "inputType": "Text",
+          "validators": [],
+          "help": "",
+          "translatable": false
+        },
+        "_height": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "title": "Video height",
+          "inputType": "Text",
+          "validators": [],
+          "help": "",
+          "translatable": false
+        }
+      }
     }
   }
 }
