@@ -6,12 +6,34 @@ define([
 
   var EmbedMediaView = ComponentView.extend({
 
+    // events: {
+    //   "click .js-embed-media-select": "onSelect"
+    // },
+    
     preRender: function() {
       this.checkIfResetOnRevisit();
     },
 
     postRender: function() {
       this.setReadyStatus();
+
+      this.setupInview();
+    },
+
+    setupInview: function() {
+      var selector = this.getInviewElementSelector();
+      if (!selector) {
+        this.setCompletionStatus();
+        return;
+      }
+
+      this.setupInviewCompletion(selector);
+    },
+
+    getInviewElementSelector: function() {
+      if (this.model.get('body')) return '.embed-media__iframe';
+
+      return null;
     },
 
     checkIfResetOnRevisit: function() {
@@ -21,7 +43,14 @@ define([
       if (isResetOnRevisit) {
         this.model.reset(isResetOnRevisit);
       }
-    }
+    },
+
+    // onSelect: function() {
+    //   console.log("complete embedded media");
+    //   this.setCompletionStatus();
+    // }
+
+
   },
   {
     template: 'embed-media'

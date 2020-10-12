@@ -2,7 +2,8 @@
   {{> component this}} 
 
   <div class="embed-media__main">
-    <iframe src="{{{_video.src}}}" width="{{_video.width}}" height="{{_video.height}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <iframe class="embed-media__iframe" src="{{{_video.src}}}" width="{{_video._width}}" height="{{_video._height}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    {{!-- <div class="embed-media__touch js-embed-media-select"></div> --}}
   </div> 
   
 
